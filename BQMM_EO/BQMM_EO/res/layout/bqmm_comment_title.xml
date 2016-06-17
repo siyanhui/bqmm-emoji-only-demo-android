@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/bqmm_title_bg"
+    >
+	<!-- title布局 -->
+	
+	<TextView 
+	    android:id="@+id/titleLayout_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/bqmm_titleName"
+	    android:layout_centerInParent="true"
+	    android:textColor="@color/bqmm_textColor"
+	    android:textSize="@dimen/bqmm_titleTextSize"
+	    />
+	<TextView 
+	    android:id="@+id/titleLayout_back"
+	    android:layout_width="55dp"
+	    android:layout_height="55dp"
+	    android:layout_centerVertical="true"
+	    android:gravity="center"
+	    android:text="@string/bqmm_cancle"
+	    android:visibility="gone"
+	    />
+	
+	  <com.melink.bqmmsdk.widget.BQMMSendButton
+            android:id="@+id/comment_sendbutton"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/bqmm_send"
+            android:textSize="15sp" 
+            android:background="@drawable/bqmm_sendbutton_bg"
+            android:textColor="@color/bqmm_sendbutton_textcolor"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            />
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="2px"
+	    android:background="@color/bqmm_splitLineColor"
+	    android:layout_alignParentBottom="true"
+	    />
+</RelativeLayout>

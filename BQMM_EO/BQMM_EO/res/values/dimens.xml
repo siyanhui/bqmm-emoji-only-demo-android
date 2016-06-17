@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- font -->
+    <dimen name="bqmm_titleTextSize">18sp</dimen>
+    <dimen name="bqmm_commentTextSize">17sp</dimen>
+    <dimen name="bqmm_smallTextSize">12sp</dimen>
+</resources>

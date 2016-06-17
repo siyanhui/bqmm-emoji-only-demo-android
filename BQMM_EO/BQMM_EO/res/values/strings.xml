@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BQMM_EO</string>
+
+    <string name="bqmm_titleName">表情mm社区</string>
+    <string name="bqmm_writeComment">写 评 论</string>
+    <string name="bqmm_noneComment">还没有发过评论哦~</string>
+    <string name="bqmm_cancle">取消</string>
+    <string name="bqmm_send">发送</string>
+</resources>

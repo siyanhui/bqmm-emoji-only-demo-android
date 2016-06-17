@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include
+        android:id="@+id/listlayout_title"
+        layout="@layout/bqmm_comment_title" />
+	<RelativeLayout 
+	   android:layout_width="fill_parent"
+	   android:layout_height="fill_parent" 
+	   android:background="@color/bqmm_content_bg" 
+	   android:layout_below="@+id/listlayout_title"
+	    >
+    <LinearLayout
+        android:id="@+id/listlayout_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bqmm_title_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/bqmm_comment_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/bqmm_writeComment"
+            android:textColor="@color/bqmm_textBlack"
+            android:textSize="@dimen/bqmm_commentTextSize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listlayout_buttomline"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/listlayout_comment"
+        android:background="@color/bqmm_lineColor" />
+    <!-- list -->
+
+    <ListView
+        android:id="@+id/listlayout_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/listlayout_buttomline"
+        android:layout_marginTop="5dp" 
+        android:dividerHeight="1px"
+        android:divider="#acacac"
+        >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/listlayout_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/listlayout_buttomline"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" >
+
+        
+        <TextView
+            android:id="@+id/tv_none"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/bqmm_noneComment"
+            android:textColor="@color/bqmm_textLight"
+            android:textSize="@dimen/bqmm_titleTextSize" />
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/tv_none"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/bqmm_comment_empty" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

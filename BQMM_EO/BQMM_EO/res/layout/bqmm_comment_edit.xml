@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bqmm_comment_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/bqmm_content_bg"
+        android:orientation="vertical" >
+
+        <com.melink.bqmmsdk.widget.BQMMEditView
+            android:id="@+id/comment_editview"
+            android:layout_width="fill_parent"
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:background="@null"
+            android:focusable="true"
+            android:gravity="top|left"
+            android:hint="输入您要评论的内容..."
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:id="@+id/comment_checkbox_area"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/bqmm_lineColor" />
+
+            <CheckBox
+                android:id="@+id/comment_checkbox"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bqmm_selector_chat_face"
+                android:button="@null"
+                android:checked="true"
+                />
+            
+        </RelativeLayout>
+
+        <com.melink.bqmmsdk.ui.keyboard.BQMMKeyboard
+            android:id="@+id/comment_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="240dp" />
+    </LinearLayout>
+
+</LinearLayout>

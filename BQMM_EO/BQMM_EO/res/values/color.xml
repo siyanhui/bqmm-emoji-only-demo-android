@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bqmm_title_bg">#f8f8f8</color>
+    <color name="bqmm_content_bg">#fafafa</color>
+    <color name="bqmm_splitLineColor">#f2f2f2</color>
+    <color name="bqmm_lineColor">#b8b8b8</color>
+    <color name="bqmm_textColor">#5a5a5a</color>
+    <color name="bqmm_textBlack">#272727</color>
+     <color name="bqmm_textLight">#9b9b9b</color>
+     <color name="bqmm_sendbutton_bg">#ff36cab6</color>
+     
+    
+</resources>

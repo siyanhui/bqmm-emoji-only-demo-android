@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView 
+        android:id="@+id/tv_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/bqmm_titleTextSize"
+        android:textColor="@color/bqmm_textColor"
+        android:text="@string/bqmm_noneComment"
+        />
+    
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bqmm_comment_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_none"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
