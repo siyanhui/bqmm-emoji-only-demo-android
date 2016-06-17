@@ -5,4 +5,7 @@ build/
 .gradle
 *.iml
 local.properties
+/BQMM_EO/BQMM_EO/.settings/org.eclipse.jdt.core.prefs
+/BQMM_EO/BQMM_EO/.settings/org.eclipse.core.resources.prefs
+
 
