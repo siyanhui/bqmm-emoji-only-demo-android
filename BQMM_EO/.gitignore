@@ -6,6 +6,6 @@ BQMM/
 .gradle
 *.iml
 local.properties
-settings.gradle
+
 
 
